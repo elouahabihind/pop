@@ -1,0 +1,4 @@
+Inscription_File.txt
+users/*
+!users/.gitkeep
+

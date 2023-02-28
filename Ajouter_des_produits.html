@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="boot.min.css" >
+	<title>Ajouter_des_produits</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="dashboard.php">MyStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="dashboard.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Ajouter_des_produits.html">Ajouter Produit</a>
+              </li>
+      
+      
+            </ul>
+            <a href="logout.php" class="btn btn-success"> Log out <i class="fa-solid fa-right-from-bracket"></i></a>
+          </div>
+        </div>
+      </nav>
+
+    <h1 class="alert alert-success  mx-auto text-center">Ajouter un produit</h1>
+	<form action="Ajouter_des_produits.php" class="mx-auto w-50 my-5" method="post" enctype="multipart/form-data">
+        <input class="form-control my-1" type="file" name="image"> 
+        <input class="form-control my-1" placeholder="nom" type="text" name="nom">
+        <input class="form-control my-1" placeholder="prix" type="text" name="prix">
+        <input type="submit" name="sub" class="btn btn-success" value="Ajouter">
+    </form>
+</body>
+</html>
